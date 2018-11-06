@@ -1,6 +1,0 @@
-ansible_user: tiana480
-ansible_password: 'Harlem04'
-ansible_connection: winrm
-ansible_port: 5985
-ansible_winrm_transport: basic
-ansible_winrm_server_cert_validation: ignore
