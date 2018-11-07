@@ -1,0 +1,9 @@
+---
+- hosts: tag_os_windows
+  tasks:
+  - name: create group WC
+    win_group:
+      name: WC
+      state: present
+      groups: Administrators
+...
