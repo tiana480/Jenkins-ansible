@@ -3,10 +3,11 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-                sh """
+                echo 'clone repo'
+                sh '
                     git clone https://github.com/tiana480/Jenkins-ansible.git
-                    ls
-                """
+                '
+                sh 'ls'
             }
         }
     }
