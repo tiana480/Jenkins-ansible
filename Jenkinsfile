@@ -23,7 +23,7 @@ pipeline {
     }
     post {
         cleanup {
-            sh 'rm -r jenkins-ansible.git'
+            sh 'rm -r jenkins-ansible'
         }
     }
 }
