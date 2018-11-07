@@ -7,7 +7,7 @@
       password: Harlem04
       state: present
       groups: Administrators
-      password_never_expire: yes
+      password_never_expires: yes
   - name: create file test
     win_file:
       path: C:\test.txt
