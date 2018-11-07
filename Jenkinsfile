@@ -11,13 +11,14 @@ pipeline {
                 '''
             }
         }
-        stage ('Test')
+        stage ('Test'){
             steps {
                 echo 'Deploy to test enviornment'
                 sh '''
                 ansible-playbook Playbooks/winplay2.yml -i inventory/ec2.py
                 '''
             }
+        }
     }
 }
 
