@@ -6,7 +6,7 @@
       name: Terry
       password: Harlem04
       state: present
-      groups: Administrator
+      groups: Administrators
       password_never_expire: yes
   - name: create file test
     win_file:
