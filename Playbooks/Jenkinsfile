@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+    stages {
+        stage ('Build') {
+            steps {
+                sh """
+                    git clone https://github.com/tiana480/Jenkins-ansible.git
+                    ls
+                """
+            }
+        }
+    }
+}
