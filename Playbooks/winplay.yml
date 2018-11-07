@@ -1,7 +1,6 @@
 ---
--
-  hosts: tag_os_windows
-  task:
+- hosts: tag_os_windows
+  tasks:
   - name: create a user Terry 
     win_user:
       name: Terry
