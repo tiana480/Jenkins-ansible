@@ -1,0 +1,15 @@
+---
+- host: tag_os_windows
+  task:
+  - name: create a user Terry 
+    win_user:
+      name: Terry
+      password: Harlem04
+      state: present
+      groups: Administrator
+      password_never_expire: yes
+  - name: create file test
+    win_file:
+      path: C:\test.txt
+      state: touch
+...
