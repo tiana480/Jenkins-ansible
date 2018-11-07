@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage ('Clone'){
+        stage ('Build'){
             steps {
                 echo 'Clone repo'
                 sh '''
@@ -11,7 +11,7 @@ pipeline {
                 '''
             }
         }
-        stage ('Deploy to Test'){
+        stage ('Test'){
             steps {
                 echo 'Deploy to test enviornment'
                 sh '''
@@ -19,10 +19,11 @@ pipeline {
                 '''
             }
         }
-        post{
-            cleanup {
-                sh 'rm -r jenkins-ansible.git'
-            }
+        
+    }
+    post {
+        cleanup {
+            sh 'rm -r jenkins-ansible.git'
         }
     }
 }
