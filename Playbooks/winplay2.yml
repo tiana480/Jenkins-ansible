@@ -5,5 +5,4 @@
     win_group:
       name: WC
       state: present
-      groups: Administrators
 ...
