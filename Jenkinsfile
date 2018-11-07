@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage ('Build'){
+        stage ('Clone'){
             steps {
                 echo 'Clone repo'
                 sh '''
@@ -11,7 +11,7 @@ pipeline {
                 '''
             }
         }
-        stage ('Test'){
+        stage ('Deploy to Test'){
             steps {
                 echo 'Deploy to test enviornment'
                 sh '''
